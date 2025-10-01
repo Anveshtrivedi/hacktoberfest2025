@@ -1,0 +1,78 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #141444, #2c2c7a);
+    font-family: 'Courier New', Courier, monospace;
+    color: #f5f5f5;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#counter-board {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.buttons-section {
+    display: flex;
+    gap: 15px;
+}
+
+.buttons-section button {
+    border: none;
+    border-radius: 12px;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    background: #3a86ff;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Hover effects */
+.buttons-section button:hover {
+    transform: translateY(-3px);
+    background: #266dd3;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
+
+/* Active click effect */
+.buttons-section button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Different colors for each button */
+#increase-btn {
+    background: #05694e;
+}
+#increase-btn:hover {
+    background: #04a77d;
+}
+
+#decrease-btn {
+    background: #cb0231;
+}
+#decrease-btn:hover {
+    background: #c93a5c;
+}
+
+#reset-btn {
+    background: #d59707;
+    color: #222;
+}
+#reset-btn:hover {
+    background: #e6b84f;
+}
